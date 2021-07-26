@@ -1,9 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import AddComponent from './AddComponent';
-import NestedGrid from './NestedGrid';
-
-
 
 
 function GifExpertApp() {
@@ -21,7 +18,7 @@ function GifExpertApp() {
                 }    
             </ol>
             <AddComponent setCategories={setCategories}/>
-            <NestedGrid/>
+         
         </div>
     )
 }

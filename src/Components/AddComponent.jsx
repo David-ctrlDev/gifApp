@@ -1,14 +1,17 @@
 import React from 'react'
 import { useState } from 'react';
+//import apiFetch from '../functions/fetch';
+
 
 function AddComponent({setCategories}) {
+
 const [newCategory, setnewCategory] = useState("");
  
     const handleChange =(e)=>{     
         setnewCategory(e.target.value)
     }
-    const handleClick =(e)=>{
-        setCategories(cats=>[...cats,newCategory])
+     const handleClick =(e)=>{
+     setCategories(cats=>[...cats,newCategory])
     }
     return (
         <div>
